@@ -4,6 +4,8 @@ subtitle: "A living handbook for research staff at YIE, IEIC, and IEN"
 toc: false
 sidebar: lifecycle
 page-layout: full
+last-reviewed: "2026-05-05"
+owner-role: "Handbook Managing Editor"
 ---
 
 This handbook is a living community resource. It documents how we do research at
