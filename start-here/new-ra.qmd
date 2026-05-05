@@ -1,0 +1,66 @@
+---
+title: "New Research Associate"
+subtitle: "Your first two weeks at IE"
+description: "A curated walkthrough of essential handbook pages and tasks for new RAs at YIE, IEIC, or IEN."
+status: "draft"
+last-reviewed: "2026-05-05"
+owner-role: "Hub Research Manager"
+hubs: ["YIE", "IEIC", "IEN"]
+---
+
+{{< include /_partials/_status-banner.qmd >}}
+
+::: {.tldr}
+By the end of your second week you should: (1) have all your accounts set up,
+(2) have completed CITI human subjects training, (3) be listed on at least one
+IRB-on-record at your hub, (4) have Cryptomator working on your laptop, and
+(5) have read your project's pre-analysis plan.
+:::
+
+## Week 1
+
+### Day 1
+- Read the [Working at IE](/working-at-ie/index.qmd) overview for your hub.
+- Set up your IE email signature ([template](/working-at-ie/email-signature.qmd)).
+- Complete [CITI Human Subjects Certification](/research-design/irbs.qmd#citi-training).
+
+### Days 2–3
+- Read your project's pre-analysis plan and the underlying registered trial on
+  the [AEA Registry]({{< meta var.aea-registry >}}).
+- Skim [J-PAL's introduction to randomized evaluations]({{< meta var.jpal-research-resources >}}#introduction)
+  if you're new to the methodology.
+
+### Days 4–5
+- Set up [Cryptomator](/research-design/cryptomator.qmd) on your laptop.
+- Get your name added to relevant project IRBs ([how](/research-design/irbs.qmd#getting-added)).
+- Meet your project's RM and ask about the team's weekly rituals.
+
+## Week 2
+
+- Shadow at least one survey or partner call.
+- Read [File and Folder Management](/research-design/file-and-folder-management.qmd)
+  and conform your local setup to it.
+- **Submit your first handbook contribution** — see
+  [Contributing](/contributing.qmd). Even a typo fix counts.
+
+## Hub-specific add-ons
+
+::: {.panel-tabset}
+## YIE
+- Set up your Yale NetID and VPN.
+- Review the [YIE Time Off Request Policy](/working-at-ie/yie-time-off.qmd).
+- Read [Yale Travel Expense Guidance](/working-at-ie/yale-travel-expense.qmd).
+
+## IEIC
+- IFMR HR onboarding (separate process).
+- Review [Research Manager Responsibilities](/working-at-ie/ieic-rm-responsibilities.qmd).
+- Complete [Digital Signature Training](/working-at-ie/digital-signature.qmd).
+
+## IEN
+- Governance Lab orientation.
+- Read [Working at IEN](/working-at-ie/working-at-ien.qmd).
+:::
+
+::: {.who-to-ask}
+Your hub's Research Manager. They sign you off on this checklist.
+:::

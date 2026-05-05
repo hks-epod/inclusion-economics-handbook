@@ -1,0 +1,72 @@
+---
+title: "Glossary"
+subtitle: "IE acronyms and terms"
+status: "draft"
+last-reviewed: "2026-05-05"
+owner-role: "Handbook Managing Editor"
+---
+
+{{< include /_partials/_status-banner.qmd >}}
+
+::: {.tldr}
+A reference for IE-specific acronyms and terms that confuse new staff.
+Add a term whenever you find yourself explaining one to a new colleague.
+:::
+
+## Organizational
+
+**IE** — Inclusion Economics, the cross-hub research initiative.
+
+**YIE** — Inclusion Economics at Yale University, based at the Economic
+Growth Center and the MacMillan Center.
+
+**IEIC** — Inclusion Economics India Centre, based at IFMR.
+
+**IEN** — Inclusion Economics Nepal, based at Governance Lab as part of the
+Daayitwa Abiyaan Initiative.
+
+**IFMR** — Institute for Financial Management and Research, the institutional
+home of IEIC in Chennai, India.
+
+**EGC** — Economic Growth Center at Yale, the institutional home of YIE.
+
+## Research methods
+
+**RCT** — Randomized Controlled Trial.
+
+**PAP** — Pre-Analysis Plan. A document filed before data analysis (and
+ideally before data collection) that specifies hypotheses, outcomes, and
+analytical approach.
+
+**ITT** — Intent-to-Treat.
+
+**LATE** — Local Average Treatment Effect.
+
+## Operations and compliance
+
+**HSC** — Human Subjects Committee, the term Yale uses for its IRB.
+
+**IRB** — Institutional Review Board. Reviews and approves human subjects research.
+
+**DUA** — Data Use Agreement. Contract governing access to and use of a dataset.
+
+**MoU** — Memorandum of Understanding. Lighter-weight agreement between IE
+and a partner organization.
+
+**NHRC** — Nepal Health Research Council, the body that reviews health-related
+research in Nepal.
+
+**CITI** — Collaborative Institutional Training Initiative, the human subjects
+training program required for research staff.
+
+## Tools
+
+**SurveyCTO** — Mobile data collection platform used for most IE field surveys.
+
+**engageSPARK** — IVR/SMS platform used for some IE remote data collection.
+
+**Cryptomator** — Encryption tool used for storing identifiable data.
+
+::: {.who-to-ask}
+Add a missing term: click **Edit this page**.
+:::

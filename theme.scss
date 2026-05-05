@@ -1,0 +1,136 @@
+/*-- scss:defaults --*/
+
+// Restrained, documentation-friendly palette.
+// Adjust to your IE brand once you confirm hex values.
+$primary:        #1a4d80;   // IE deep blue
+$secondary:      #5a8db8;
+$body-color:     #1c1c1c;
+$body-bg:        #ffffff;
+$link-color:     #1a4d80;
+$link-hover-color: #0d2c4d;
+
+// Typography — a touch denser than Bootstrap default to feel like a handbook.
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+$font-family-monospace:  "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+$font-size-base:         1rem;
+$line-height-base:       1.65;
+$headings-font-weight:   650;
+$h1-font-size:           2.1rem;
+$h2-font-size:           1.55rem;
+$h3-font-size:           1.25rem;
+
+// Code blocks — slightly tighter contrast than Cosmo default
+$code-bg:        #f6f8fa;
+$code-color:     #0d2c4d;
+
+/*-- scss:rules --*/
+
+// ---------- Page status banner ----------
+.status-banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin: -0.5rem 0 1.25rem 0;
+  padding: 0.6rem 0.85rem;
+  background: #f6f8fa;
+  border-left: 3px solid $primary;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.status-banner .badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.25em 0.65em;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.status-banner .badge-draft     { background: #fff3cd; color: #7a5b00; }
+.status-banner .badge-in-review { background: #cfe2ff; color: #084298; }
+.status-banner .badge-approved  { background: #d1e7dd; color: #0f5132; }
+.status-banner .badge-archived  { background: #e2e3e5; color: #41464b; }
+
+// Hub badges
+.status-banner .hub-yie  { background: #e7f1ff; color: #084298; }
+.status-banner .hub-ieic { background: #fff4e5; color: #7a4a00; }
+.status-banner .hub-ien  { background: #e7f7ee; color: #0f5132; }
+
+// ---------- TL;DR / IE-specific callouts ----------
+.tldr,
+.ie-specific,
+.who-to-ask,
+.pitfalls {
+  border-radius: 6px;
+  padding: 0.9rem 1.1rem;
+  margin: 1.2rem 0;
+  border-left: 4px solid $primary;
+  background: #f6f8fa;
+}
+.tldr        { border-left-color: #1a4d80; background: #eef4fb; }
+.ie-specific { border-left-color: #b58900; background: #fdf6e3; }
+.pitfalls    { border-left-color: #b03a2e; background: #fbeae6; }
+.who-to-ask  { border-left-color: #198754; background: #e9f5ef; }
+
+.tldr        > p:first-child::before { content: "TL;DR — "; font-weight: 700; }
+.ie-specific > p:first-child::before { content: "What's IE-specific — "; font-weight: 700; }
+.pitfalls    > p:first-child::before { content: "Common pitfalls — "; font-weight: 700; }
+.who-to-ask  > p:first-child::before { content: "Who to ask — "; font-weight: 700; }
+
+// ---------- Feedback widget (bottom of every page) ----------
+.feedback-widget {
+  margin: 3rem 0 1.5rem 0;
+  padding: 1rem 1.25rem;
+  background: #f6f8fa;
+  border-radius: 6px;
+  border: 1px solid #e1e4e8;
+  font-size: 0.9rem;
+}
+.feedback-widget .feedback-buttons {
+  display: inline-flex;
+  gap: 0.5rem;
+  margin-left: 0.75rem;
+}
+.feedback-widget button {
+  background: white;
+  border: 1px solid #d0d7de;
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+}
+.feedback-widget button:hover {
+  background: $primary;
+  color: white;
+  border-color: $primary;
+}
+
+// ---------- Sidebar tweaks ----------
+.sidebar-item-text { line-height: 1.35; }
+.sidebar nav .sidebar-section .sidebar-item { font-size: 0.92rem; }
+
+// ---------- "Start Here" landing cards ----------
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.role-card {
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+  background: white;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.role-card:hover {
+  box-shadow: 0 4px 14px rgba(26,77,128,0.12);
+  transform: translateY(-1px);
+}
+.role-card h3 {
+  margin-top: 0;
+  font-size: 1.05rem;
+  color: $primary;
+}
+.role-card p { font-size: 0.92rem; margin-bottom: 0.5rem; }

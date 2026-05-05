@@ -1,0 +1,32 @@
+name: Stale page review
+
+on:
+  schedule:
+    - cron: '0 13 1 * *'   # 13:00 UTC on the 1st of every month
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  flag-stale-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install python-frontmatter PyGithub
+
+      - name: Run stale-page checker
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPOSITORY: ${{ github.repository }}
+          STALE_THRESHOLD_DAYS: 365
+        run: python scripts/check_stale_pages.py

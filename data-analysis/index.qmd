@@ -1,0 +1,30 @@
+---
+title: "Data Analysis"
+subtitle: "Cleaning, archiving, indices"
+status: "draft"
+last-reviewed: "2026-05-05"
+owner-role: "Section Owner — TBD"
+---
+
+{{< include /_partials/_status-banner.qmd >}}
+
+::: {.tldr}
+Cleaning data, structuring administrative data, constructing summary indices, and producing publication-quality tables and figures.
+:::
+
+## Pages in this section
+
+This section is being migrated from the legacy Google Sites handbook. Pages
+already populated are listed in the left sidebar. Pages not yet listed are
+**stubs** awaiting migration — see the
+[migration tracker](https://github.com/hks-epod/inclusion-economics-handbook/issues?q=is%3Aopen+label%3Amigration)
+for status, or click _Edit this page_ to contribute one.
+
+## Related external resources
+
+- [J-PAL Research Resources]({{< meta var.jpal-research-resources >}}) — generic
+  guidance on randomized evaluations. We link out rather than duplicate.
+
+::: {.who-to-ask}
+Section Owner — to be assigned. Until then, ping `#handbook` on Slack.
+:::

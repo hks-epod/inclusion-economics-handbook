@@ -1,0 +1,17 @@
+/*-- scss:defaults --*/
+$primary:        #5a8db8;
+$body-bg:        #15171a;
+$body-color:     #e6e6e6;
+$link-color:     #8fb8df;
+$link-hover-color: #c2dcf2;
+$code-bg:        #1f2329;
+$code-color:     #c2dcf2;
+
+/*-- scss:rules --*/
+.status-banner { background: #1f2329; color: #c4c4c4; }
+.tldr        { background: #1c2a3a; }
+.ie-specific { background: #2e2718; }
+.pitfalls    { background: #2e1f1d; }
+.who-to-ask  { background: #1d2c25; }
+.feedback-widget { background: #1f2329; border-color: #2c3035; }
+.role-card { background: #1f2329; border-color: #2c3035; }

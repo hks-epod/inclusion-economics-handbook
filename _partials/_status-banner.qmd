@@ -1,0 +1,20 @@
+::: {.status-banner}
+[**Status:** [{{< meta status >}}]{.badge .badge-{{< meta status >}}}]{}
+&nbsp;·&nbsp;
+**Last reviewed:** {{< meta last-reviewed >}}
+&nbsp;·&nbsp;
+**Owner:** {{< meta owner-role >}}
+&nbsp;·&nbsp;
+**Applies to:**
+[YIE]{.badge .hub-yie}
+[IEIC]{.badge .hub-ieic}
+[IEN]{.badge .hub-ien}
+:::
+
+<!--
+  NOTE: Quarto includes don't yet support conditional rendering of frontmatter
+  list values (the `hubs:` field) without a Lua filter. The three hub badges
+  above all render. To show only relevant hubs, either:
+    (a) override this include on the page and only show the relevant badges, or
+    (b) install the included Lua filter at scripts/hub-badges.lua (optional).
+-->

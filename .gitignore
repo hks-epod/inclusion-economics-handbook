@@ -1,0 +1,22 @@
+# Quarto build output
+/_site/
+/.quarto/
+/_freeze/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*~
+
+# Python (for the stale-page script if anyone runs it locally)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local env files (don't commit secrets)
+.env
+.env.local

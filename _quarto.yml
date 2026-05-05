@@ -1,0 +1,193 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - "assets/"
+    - "CNAME"          # Cloudflare/custom domain (add later)
+    - "robots.txt"
+
+# -----------------------------------------------------------------------------
+# Site-wide configuration
+# -----------------------------------------------------------------------------
+website:
+  title: "Inclusion Economics Handbook"
+  description: |
+    A living handbook for research staff at Inclusion Economics — covering the
+    research lifecycle and hub-specific operations across YIE, IEIC, and IEN.
+  site-url: https://handbook.inclusioneconomics.org   # change to your final URL
+  favicon: assets/favicon.png                          # add a favicon later
+  open-graph: true
+  twitter-card: false
+  reader-mode: true
+
+  # GitHub repo wiring — powers "Edit this page" / "Report an issue"
+  # Update hks-epod and inclusion-economics-handbook to your GitHub org and repository name.
+  repo-url: https://github.com/hks-epod/inclusion-economics-handbook
+  repo-branch: main
+  repo-subdir: ""
+  repo-actions: [edit, issue, source]
+
+  # Page footer
+  page-footer:
+    left: |
+      © Inclusion Economics. Content licensed CC-BY-4.0 unless otherwise noted.
+    center: |
+      [Contributing](/contributing.qmd) ·
+      [Glossary](/glossary.qmd) ·
+      [Suggest a change](https://github.com/hks-epod/inclusion-economics-handbook/issues/new/choose) ·
+      [Feedback](https://forms.gle/REPLACE_ME)
+    right: |
+      Built with [Quarto](https://quarto.org).
+
+  # Top navbar — high-level, role-oriented
+  navbar:
+    background: primary
+    pinned: true
+    search: true
+    left:
+      - text: "Start Here"
+        file: start-here/index.qmd
+      - text: "Research Lifecycle"
+        menu:
+          - working-at-ie/index.qmd
+          - research-design/index.qmd
+          - field-planning/index.qmd
+          - implementation/index.qmd
+          - data-collection/index.qmd
+          - data-analysis/index.qmd
+          - project-management/index.qmd
+      - text: "Reference"
+        menu:
+          - glossary.qmd
+          - contributing.qmd
+          - about.qmd
+    right:
+      - icon: github
+        href: https://github.com/hks-epod/inclusion-economics-handbook
+        aria-label: GitHub
+      - icon: slack
+        href: https://YOUR-WORKSPACE.slack.com/archives/CHANNEL_ID
+        aria-label: Handbook Slack channel
+
+  # Left sidebar — research lifecycle
+  sidebar:
+    - id: lifecycle
+      title: "Research Lifecycle"
+      style: docked
+      collapse-level: 2
+      align: left
+      contents:
+        - href: index.qmd
+          text: "Home"
+        - section: "Start Here"
+          href: start-here/index.qmd
+          contents:
+            - start-here/new-ra.qmd
+            - start-here/new-rm.qmd
+            - start-here/pi-prepping-grant.qmd
+            - start-here/visiting-researcher.qmd
+        - section: "Working at IE"
+          href: working-at-ie/index.qmd
+          contents: []   # populate during migration
+        - section: "Research Design and Planning"
+          href: research-design/index.qmd
+          contents:
+            - research-design/irbs.qmd
+        - section: "Field Planning"
+          href: field-planning/index.qmd
+          contents: []
+        - section: "Implementation"
+          href: implementation/index.qmd
+          contents: []
+        - section: "Data Collection"
+          href: data-collection/index.qmd
+          contents: []
+        - section: "Data Analysis"
+          href: data-analysis/index.qmd
+          contents: []
+        - section: "Project Management"
+          href: project-management/index.qmd
+          contents: []
+        - section: "Reference"
+          contents:
+            - glossary.qmd
+            - contributing.qmd
+
+  # -------------------------------------------------------------------------
+  # Search — Algolia DocSearch (free for open-source documentation).
+  # Apply at https://docsearch.algolia.com/apply/
+  # Once approved, fill in the three fields below and uncomment.
+  # Until then, Quarto's built-in lunr.js search runs by default.
+  # -------------------------------------------------------------------------
+  # search:
+  #   type: algolia
+  #   algolia:
+  #     index-name: REPLACE_ME
+  #     application-id: REPLACE_ME
+  #     search-only-api-key: REPLACE_ME
+  #     analytics-events: true
+  #     show-logo: true
+
+  # -------------------------------------------------------------------------
+  # Comments — Giscus (per-page discussion backed by GitHub Discussions).
+  # Setup: enable Discussions in your repo, install giscus.app, then visit
+  # https://giscus.app to generate the four IDs below.
+  # -------------------------------------------------------------------------
+  # comments:
+  #   giscus:
+  #     repo: hks-epod/inclusion-economics-handbook
+  #     repo-id: REPLACE_ME
+  #     category: General
+  #     category-id: REPLACE_ME
+  #     mapping: pathname
+  #     reactions-enabled: true
+  #     loading: lazy
+  #     input-position: top
+  #     theme: light
+  #     language: en
+
+# -----------------------------------------------------------------------------
+# Format / theme
+# -----------------------------------------------------------------------------
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss]
+      dark:  [cosmo, theme-dark.scss]
+    css: styles.scss
+    toc: true
+    toc-depth: 3
+    toc-location: right
+    code-copy: true
+    code-overflow: wrap
+    code-link: true
+    link-external-newwindow: true
+    link-external-icon: true
+    anchor-sections: true
+    smooth-scroll: true
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    df-print: paged
+    include-in-header:
+      - _partials/_analytics.html        # Umami snippet (commented in the file)
+      - _partials/_noindex.html          # noindex meta during gated phase
+    include-after-body:
+      - _partials/_feedback-widget.html
+
+# -----------------------------------------------------------------------------
+# Default frontmatter for every page (overridable per-page)
+# -----------------------------------------------------------------------------
+date-format: "YYYY-MM-DD"
+author: "Inclusion Economics"
+status: "draft"
+last-reviewed: ""
+hubs: []                                 # ["YIE","IEIC","IEN"] or subset
+owner-role: "Unassigned"
+
+execute:
+  freeze: auto                            # cache rendered outputs
+
+# Knit-time variables your pages can use as {{< meta var.NAME >}}
+# Edit values centrally in _variables.yml.
+metadata-files:
+  - _variables.yml

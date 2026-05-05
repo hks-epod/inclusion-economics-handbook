@@ -1,0 +1,22 @@
+# Each line: path-pattern  @owner1 @owner2
+# Replace these with real GitHub usernames or team handles (e.g. @ORG/handbook-editors).
+
+# Default owners for everything in the repo
+*                          @hks-epod/handbook-editors
+
+# Section owners
+/working-at-ie/            @hks-epod/research-ops
+/research-design/          @hks-epod/research-ops
+/field-planning/           @hks-epod/research-ops
+/implementation/           @hks-epod/research-ops
+/data-collection/          @hks-epod/research-ops
+/data-analysis/            @hks-epod/research-ops
+/project-management/       @hks-epod/research-ops
+/start-here/               @hks-epod/handbook-editors
+
+# Infra changes get tighter review
+/_quarto.yml               @hks-epod/handbook-admins
+/.github/                  @hks-epod/handbook-admins
+/scripts/                  @hks-epod/handbook-admins
+/theme.scss                @hks-epod/handbook-admins
+/theme-dark.scss           @hks-epod/handbook-admins

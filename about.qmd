@@ -1,0 +1,48 @@
+---
+title: "About this handbook"
+status: "approved"
+last-reviewed: "2026-05-05"
+owner-role: "Director of Research Operations"
+---
+
+{{< include /_partials/_status-banner.qmd >}}
+
+## Purpose
+
+This handbook documents how Inclusion Economics conducts research across its
+hubs at Yale, IFMR, and Governance Lab. It is **complementary** to public
+resource libraries such as J-PAL's Research Resources and IPA's Goldilocks
+Toolkit — those cover generic methodology better than we can. This handbook
+focuses on what is specific to IE: our hubs' operational policies, the
+templates we use, the partners we work with, and the lessons we've learned.
+
+## Governance
+
+- The handbook is owned by IE Research Operations.
+- Each section has a designated `owner-role` who is responsible for that
+  section's accuracy.
+- Day-to-day editorial decisions are made by the Handbook Managing Editor.
+- The Director of Research Operations approves new top-level sections and
+  major restructuring.
+
+## How changes are made
+
+Every change is a pull request on GitHub. See [Contributing](contributing.qmd).
+
+## Maintenance cycle
+
+- **Continuous:** typo fixes, broken links, small additions.
+- **Quarterly:** stale-page sprint. Pages whose `last-reviewed` date is more
+  than 12 months old are flagged automatically and reviewed by the relevant
+  section owner.
+- **Annual:** Director-led top-to-bottom review of section structure and
+  ownership assignments.
+
+## Technical stack
+
+- Content authored in [Quarto](https://quarto.org).
+- Hosted on GitHub Pages, with optional Cloudflare Access for gating.
+- Search via Algolia DocSearch (or built-in lunr.js fallback).
+- Comments via Giscus (backed by GitHub Discussions).
+- Analytics via Umami.
+- Stale-content automation via GitHub Actions.

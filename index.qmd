@@ -1,0 +1,81 @@
+---
+title: "Inclusion Economics Handbook"
+subtitle: "A living handbook for research staff at YIE, IEIC, and IEN"
+toc: false
+sidebar: lifecycle
+page-layout: full
+---
+
+This handbook is a living community resource. It documents how we do research at
+Inclusion Economics — across our three hubs at Yale, IFMR, and Governance Lab —
+and is maintained collaboratively by staff. **You are invited to read, suggest
+changes, and edit it.** Every page has an _Edit this page_ link in the right
+margin.
+
+::: {.tldr}
+This handbook complements the
+[J-PAL Research Resources]({{< meta var.jpal-research-resources >}}) and
+[IPA Goldilocks Toolkit]({{< meta var.ipa-goldilocks >}}), which we recommend
+for general guidance on randomized evaluations. We focus on what's specific to
+working at IE: our hubs' operational policies, the templates we use, the
+partners we work with, and lessons learned from our own studies.
+:::
+
+## I'm new — where do I start?
+
+::: {.role-grid}
+::: {.role-card}
+### New Research Associate
+First two weeks at YIE, IEIC, or IEN.
+
+[Start here →](start-here/new-ra.qmd)
+:::
+
+::: {.role-card}
+### New Research Manager
+Setting up your first project.
+
+[Start here →](start-here/new-rm.qmd)
+:::
+
+::: {.role-card}
+### Principal Investigator
+Prepping a grant proposal or new study.
+
+[Start here →](start-here/pi-prepping-grant.qmd)
+:::
+
+::: {.role-card}
+### Visiting Researcher
+Arriving in Kathmandu, Chennai, or New Haven.
+
+[Start here →](start-here/visiting-researcher.qmd)
+:::
+:::
+
+## Browse by lifecycle stage
+
+- [Working at IE](working-at-ie/index.qmd) — hub-specific policies, branding, team directory
+- [Research Design and Planning](research-design/index.qmd) — IRBs, registration, data security
+- [Field Planning](field-planning/index.qmd) — safety, hiring, third-party firms
+- [Implementation](implementation/index.qmd) — partner management, agreements
+- [Data Collection](data-collection/index.qmd) — SurveyCTO, engageSPARK, tracking
+- [Data Analysis](data-analysis/index.qmd) — cleaning, archiving, indices
+- [Project Management](project-management/index.qmd) — budgets, trackers, RM bootcamp
+
+## About IE
+
+Inclusion Economics draws upon economics, political science, and related fields
+to conduct research on how policy can promote inclusive, accountable economies
+and societies. Our core research focuses on gender as it relates to labor
+economics and broader economic empowerment; political economy and governance;
+and environmental economics.
+
+- [{{< meta var.hub-yie >}}](https://egc.yale.edu/ie) — based at the Economic Growth Center and the MacMillan Center
+- [{{< meta var.hub-ieic >}}](https://krea.edu.in/ieindia/) — at IFMR
+- [{{< meta var.hub-ien >}}](https://govlab.com.np/) — a Daayitwa Abiyaan Initiative
+
+Templates, data, and binary resources live in the
+[IE Dropbox folder]({{< meta var.dropbox-url >}}). Contact the handbook editors
+at [{{< meta var.contact-email >}}](mailto:{{< meta var.contact-email >}}) for
+access or to flag an error.

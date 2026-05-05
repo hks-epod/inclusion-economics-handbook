@@ -1,0 +1,18 @@
+# Site-wide variables. Reference anywhere as: {{< meta var.dropbox-url >}}
+var:
+  org-name: "Inclusion Economics"
+  org-short: "IE"
+  hub-yie: "Inclusion Economics at Yale (YIE)"
+  hub-ieic: "Inclusion Economics India Centre (IEIC)"
+  hub-ien: "Inclusion Economics Nepal (IEN)"
+
+  # Operational links — update once, propagate everywhere
+  dropbox-url: "https://www.dropbox.com/sh/u2k538eku12iid5/AACMSwVvIEA4fs7Y05WBrttua?dl=0"
+  slack-channel: "https://YOUR-WORKSPACE.slack.com/archives/CHANNEL_ID"
+  feedback-form: "https://forms.gle/REPLACE_ME"
+  contact-email: "handbook@inclusioneconomics.org"
+
+  # Useful external resources we explicitly link to (rather than duplicate)
+  jpal-research-resources: "https://www.povertyactionlab.org/research-resources?view=toc"
+  ipa-goldilocks: "https://poverty-action.org/researchers/goldilocks-toolkit"
+  aea-registry: "https://www.socialscienceregistry.org/"

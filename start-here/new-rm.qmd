@@ -1,0 +1,20 @@
+---
+title: "New Research Manager"
+subtitle: "Setting up your first project"
+status: "draft"
+last-reviewed: "2026-05-05"
+owner-role: "Director of Research Operations"
+hubs: ["YIE", "IEIC", "IEN"]
+---
+
+{{< include /_partials/_status-banner.qmd >}}
+
+::: {.tldr}
+This page is a stub. Suggested coverage: budgets and budget review, trackers,
+partner agreements, team rituals (weekly updates, calls), code review norms,
+the RM bootcamp materials.
+:::
+
+::: {.who-to-ask}
+Director of Research Operations.
+:::

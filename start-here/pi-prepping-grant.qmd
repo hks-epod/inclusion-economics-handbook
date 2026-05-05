@@ -1,0 +1,15 @@
+---
+title: "PI Prepping a Grant"
+subtitle: "Proposal, budgeting, and registration checklist"
+status: "draft"
+last-reviewed: "2026-05-05"
+owner-role: "Director of Research"
+---
+
+{{< include /_partials/_status-banner.qmd >}}
+
+::: {.tldr}
+This page is a stub. Suggested coverage: proposal narrative conventions,
+budgeting at IE, IRB pre-registration, AEA registry, partner letters,
+indirect cost rates by hub.
+:::

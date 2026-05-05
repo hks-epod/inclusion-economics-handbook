@@ -1,0 +1,84 @@
+---
+title: "Contributing"
+subtitle: "How to suggest changes, fix typos, and add new pages"
+status: "approved"
+last-reviewed: "2026-05-05"
+owner-role: "Handbook Managing Editor"
+---
+
+{{< include /_partials/_status-banner.qmd >}}
+
+::: {.tldr}
+This handbook is a Quarto site stored in a GitHub repository. Every change is
+a pull request. You don't need to install anything — GitHub's web editor lets
+you fix typos and add small pages from your browser. Larger changes are
+easier with a local Quarto install.
+:::
+
+## The simplest contribution: fixing a typo
+
+1. On any handbook page, click **Edit this page** in the right margin.
+2. GitHub opens the source `.qmd` file in its web editor.
+3. Make your change. Click **Commit changes**.
+4. GitHub will offer to open a pull request — accept the default.
+5. The Managing Editor reviews and merges, usually within two business days.
+
+That's it. You did not install anything.
+
+## Adding a new page
+
+1. Decide which section the page belongs to.
+2. In GitHub's web UI, click **Add file → Create new file** in the relevant
+   folder. Name it with kebab-case ending in `.qmd`, e.g.
+   `cryptomator-setup.qmd`.
+3. Copy the contents of [`templates/_page-template.qmd`](https://github.com/hks-epod/inclusion-economics-handbook/blob/main/templates/_page-template.qmd)
+   as your starting point.
+4. Fill in the frontmatter — at minimum: `title`, `status: draft`,
+   `last-reviewed`, `owner-role`, and `hubs`.
+5. Add a link to the new page in `_quarto.yml` under the relevant `sidebar`
+   section.
+6. Commit. GitHub Actions will build a preview within 2 minutes.
+7. Open a pull request, tag `@hks-epod/handbook-editors`.
+
+## Working locally (recommended for larger changes)
+
+```bash
+# One-time setup
+brew install quarto                                # macOS; see quarto.org for others
+git clone https://github.com/hks-epod/inclusion-economics-handbook.git
+cd inclusion-economics-handbook
+
+# Each session
+git checkout -b your-branch-name
+quarto preview                                     # live-reloading local server
+
+# When done
+git add .
+git commit -m "Describe the change"
+git push -u origin your-branch-name
+# Then open a pull request on GitHub
+```
+
+## Style guide
+
+- **Voice.** Direct, concrete, second-person. "You'll need to…" not "Researchers should…"
+- **Length.** Aim for the shortest page that fully answers the question. If a
+  page exceeds ~1,500 words, consider splitting.
+- **Lists vs. prose.** Use lists only for list-shaped content. Default to prose.
+- **Acronyms.** Spell out on first use, even common ones (PAP, MoU, DUA).
+  Add to the [glossary](glossary.qmd) if it's not there yet.
+- **Hub-specific content.** Use the `panel-tabset` pattern (see the
+  [page template](https://github.com/hks-epod/inclusion-economics-handbook/blob/main/templates/_page-template.qmd))
+  rather than creating three separate pages.
+
+## Review and merge
+
+- Typos, formatting fixes, link corrections: any handbook editor can merge.
+- Substantive content changes: routed to the section's `owner-role` for review.
+- New top-level sections or major restructuring: Director of Research Operations.
+
+The CODEOWNERS file in the repo controls automatic review assignment.
+
+::: {.who-to-ask}
+Handbook Managing Editor — see the `#handbook` Slack channel.
+:::

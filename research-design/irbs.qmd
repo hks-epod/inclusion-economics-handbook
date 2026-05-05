@@ -1,0 +1,148 @@
+---
+title: "Institutional Review Boards (IRBs)"
+subtitle: "Getting your study approved across YIE, IEIC, and IEN"
+description: "Overview of the IRB review process for IE research, including hub-specific submission paths, exempt vs. expedited vs. full review, and modifications."
+author: "Inclusion Economics Research Operations"
+status: "draft"
+last-reviewed: "2026-05-05"
+owner-role: "Director of Research Operations"
+hubs: ["YIE", "IEIC", "IEN"]
+---
+
+{{< include /_partials/_status-banner.qmd >}}
+
+::: {.tldr}
+Every IE study involving human subjects needs IRB approval **at every hub
+collecting or analyzing identifiable data**. Most IE studies route through
+both Yale's HSC and either IFMR's HSC (for India) or NHRC (for Nepal).
+Start the process at least eight weeks before planned launch.
+:::
+
+::: {.ie-specific}
+J-PAL's [IRB proposals resource]({{< meta var.jpal-research-resources >}})
+covers the generic IRB landscape well. This page covers what's specific to IE:
+which IRBs we route through, who at each hub coordinates submission, the
+templates we use, and how modifications and continuing reviews are handled
+when responsibility crosses hubs.
+:::
+
+## Which IRB do I need?
+
+Your study's IRB requirements depend on **where data is collected**, **where
+it is analyzed**, and **whether subjects are identifiable** at any stage. The
+matrix below covers the common cases.
+
+| Data collected in | Data analyzed at | IRBs typically needed |
+|---|---|---|
+| India | Yale + IFMR | Yale HSC + IFMR HSC |
+| Nepal | Yale + Governance Lab | Yale HSC + NHRC |
+| Multiple countries | Yale + local hubs | Yale HSC + each local IRB |
+| US (admin data only) | Yale | Yale HSC (often exempt) |
+
+::: {.pitfalls}
+"De-identified" data is not automatically exempt from IRB review when the
+research team has the key. If you (or anyone at IE) can re-identify a record,
+it's still human subjects research at most IRBs.
+:::
+
+## Submission paths by hub
+
+::: {.panel-tabset}
+## YIE (Yale HSC)
+
+Yale uses the [IRES system](https://research.yale.edu/) for HSC submissions.
+Most IE studies fit one of three categories:
+
+- **Exempt** — secondary analysis of de-identified data, certain minimal-risk
+  surveys. Faster review (1–3 weeks typical).
+- **Expedited** — minimal-risk human subjects research. 3–6 weeks.
+- **Full board** — anything involving vulnerable populations, sensitive
+  topics, or above-minimal risk. 6–10 weeks.
+
+See [Components of an IRB Submission — Exempt](#) and
+[Components of an IRB Submission — Expedited/Full](#) for the IE templates.
+
+## IEIC (IFMR HSC)
+
+IFMR's HSC has its own definitions and submission process. Key references:
+
+- [IFMR HSC Definitions](#) — terminology mapping between IFMR and Yale
+- [IFMR IRB Guidelines](#) — submission template and timeline
+
+Submissions are coordinated by the IEIC research operations team.
+
+## IEN (NHRC)
+
+Studies in Nepal generally require Nepal Health Research Council (NHRC)
+approval in addition to Yale HSC. NHRC review timelines are highly variable
+(8–16 weeks); plan accordingly.
+:::
+
+## Getting added to an existing IRB {#getting-added}
+
+If you're a new RA or RM joining an active project:
+
+1. Complete CITI training appropriate to your hub (see [CITI training](#citi-training) below).
+2. Send your CITI completion certificate to your project's RM or PI.
+3. They will submit a personnel modification to the relevant IRB(s).
+4. Do not access identifiable data until you receive written confirmation that
+   you've been added.
+
+## CITI training {#citi-training}
+
+All IE staff with access to identifiable human subjects data must complete
+[CITI Program](https://about.citiprogram.org/) human subjects training. The
+required modules differ by hub and study type:
+
+- **Yale-affiliated staff** — Yale's "Social and Behavioral Research" basic
+  course is the default. Refresher every three years.
+- **IEIC staff** — IFMR's specified CITI track.
+- **IEN staff** — NHRC requirements vary by study.
+
+Send your completion certificate to your project's RM and keep a copy in
+your personal records folder.
+
+## Modifications
+
+Any change to study procedures, instruments, recruitment, or personnel must
+be submitted as a modification to all relevant IRBs **before** the change
+takes effect. Common modifications:
+
+- Adding or removing personnel
+- Changing or adding survey questions
+- Expanding the sample frame
+- Adding a new data source
+
+See [Modifying an IRB-Approved Study](#) for the IE template.
+
+::: {.pitfalls}
+Adding survey questions mid-fielding is the single most common modification —
+and the single most common source of post-hoc IRB headaches. If a question
+is even plausibly going to be added, include it in the original submission.
+:::
+
+## Templates
+
+All IRB submission templates live in
+[the IE Dropbox]({{< meta var.dropbox-url >}}) under `IRB Templates/`.
+Specifically:
+
+- `IE_IRB_Yale_Exempt_Template.docx`
+- `IE_IRB_Yale_Expedited_Template.docx`
+- `IE_IRB_IFMR_Template.docx`
+- `IE_IRB_NHRC_Template.docx`
+- `IE_IRB_Modification_Template.docx`
+
+::: {.who-to-ask}
+- **YIE:** the YIE Research Operations lead.
+- **IEIC:** your project's RM (escalate to the IEIC Research Operations lead
+  for non-routine submissions).
+- **IEN:** the IEN Research Operations lead.
+:::
+
+## Related pages
+
+- [AEA Trial Registry](#) — registration is required _before_ data collection
+  but is a separate process from IRB
+- [Data Use Agreements](#)
+- [Cryptomator Hub](#) — for storing IRB-approved identifiable data

@@ -1,0 +1,45 @@
+---
+title: "Start Here"
+description: "Curated paths through the handbook for common roles and situations."
+status: "approved"
+last-reviewed: "2026-05-05"
+owner-role: "Handbook Managing Editor"
+sidebar: lifecycle
+---
+
+The handbook is large. These curated paths walk you through the pages that
+matter most for common situations, in the right order. Each one is
+short — a 30-minute read at most — and ends with a checklist.
+
+::: {.role-grid}
+::: {.role-card}
+### [New Research Associate](new-ra.qmd)
+Your first two weeks at IE. CITI training, accounts, IRB-on-record,
+data security setup.
+:::
+
+::: {.role-card}
+### [New Research Manager](new-rm.qmd)
+Setting up a new project: budgets, trackers, partner agreements,
+team rituals.
+:::
+
+::: {.role-card}
+### [PI Prepping a Grant](pi-prepping-grant.qmd)
+Proposal narrative, budgeting at IE, IRB pre-registration, AEA registry,
+partner letters.
+:::
+
+::: {.role-card}
+### [Visiting Researcher](visiting-researcher.qmd)
+Arriving at YIE / IEIC / IEN: visa, accommodations, day-one logistics,
+safety contacts.
+:::
+:::
+
+::: {.who-to-ask}
+If your situation isn't covered by one of these paths, ping
+`#handbook` on Slack or open an
+[issue on GitHub](https://github.com/hks-epod/inclusion-economics-handbook/issues/new/choose).
+We add new paths when we see the same question more than twice.
+:::

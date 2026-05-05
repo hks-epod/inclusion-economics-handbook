@@ -1,0 +1,70 @@
+---
+# REQUIRED frontmatter — fill these in before submitting your PR
+title: "Page Title"
+subtitle: "One-line description (optional)"
+description: "1–2 sentence summary used in search results and link previews."
+author: "Your Name"
+status: "draft"                         # draft | in-review | approved | archived
+last-reviewed: "YYYY-MM-DD"             # date of last substantive review
+owner-role: "Role responsible for this page (not a person's name)"
+hubs: ["YIE", "IEIC", "IEN"]            # remove hubs that don't apply
+
+# OPTIONAL frontmatter
+# date: "YYYY-MM-DD"
+# image: "../assets/images/your-image.png"
+---
+
+{{< include /_partials/_status-banner.qmd >}}
+
+::: {.tldr}
+Two to four sentences. What is this page, who is it for, what will the reader
+know when they finish? Don't bury the lede — if there's a single most important
+thing on this page, it goes here.
+:::
+
+::: {.ie-specific}
+What's specific to how IE handles this — vs. generic guidance available in
+J-PAL, IPA, or upstream documentation. If J-PAL covers the basics better,
+link out and don't duplicate.
+:::
+
+## Section 1
+
+Body content. Use prose by default; lists for genuinely list-shaped content
+(steps, options, references); tables for comparisons.
+
+### Hub-specific guidance
+
+If guidance differs by hub, use a tabset rather than three separate pages:
+
+::: {.panel-tabset}
+## YIE
+YIE-specific content here.
+
+## IEIC
+IEIC-specific content here.
+
+## IEN
+IEN-specific content here.
+:::
+
+## Templates and links
+
+- [Template name in Dropbox]({{< meta var.dropbox-url >}}) — what it is and when to use it
+- [External resource]() — what it covers and why we link to it
+
+::: {.pitfalls}
+- Most common mistake new RAs make on this topic
+- Second most common mistake
+- The thing experienced RMs wish they'd known earlier
+:::
+
+::: {.who-to-ask}
+The role responsible for questions on this topic. Use a role, not a person —
+roles outlive turnover.
+:::
+
+## Related pages
+
+- [Adjacent topic 1](../path/to/page.qmd)
+- [Adjacent topic 2](../path/to/page.qmd)

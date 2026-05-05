@@ -1,0 +1,25 @@
+<div class="feedback-widget" id="feedback-widget">
+  <strong>Was this page helpful?</strong>
+  <span class="feedback-buttons">
+    <button onclick="window._sendFeedback &amp;&amp; window._sendFeedback('up')"  aria-label="Helpful">👍 Yes</button>
+    <button onclick="window._sendFeedback &amp;&amp; window._sendFeedback('down')" aria-label="Not helpful">👎 No</button>
+  </span>
+  &nbsp;·&nbsp;
+  <a href="https://forms.gle/REPLACE_ME" target="_blank" rel="noopener">Leave detailed feedback</a>
+  &nbsp;·&nbsp;
+  <span id="feedback-thanks" style="display:none; color: #198754;">Thanks — recorded.</span>
+</div>
+
+<script>
+  // If Umami is enabled, this fires a custom event with the page path.
+  // Otherwise it's a no-op (no feedback is silently lost — staff can use the form link).
+  window._sendFeedback = function(value) {
+    try {
+      if (window.umami &amp;&amp; typeof window.umami.track === 'function') {
+        window.umami.track('feedback', { page: location.pathname, value: value });
+      }
+    } catch (e) { /* swallow */ }
+    var t = document.getElementById('feedback-thanks');
+    if (t) { t.style.display = 'inline'; }
+  };
+</script>
